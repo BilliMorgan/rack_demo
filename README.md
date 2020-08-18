@@ -1,1 +1,1 @@
-## Simple clone of Rails framework buit on Puma or Thin server
+## Simple clone of Rails framework using Rack buit on Puma or Thin server
