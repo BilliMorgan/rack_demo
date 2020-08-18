@@ -1,10 +1,11 @@
-require 'pstore'
+require 'yaml/store'
 
 class Base
-  DB_FILE = File.expand_path("../../../db.pstore", __FILE__)
+  DB_FILE = File.expand_path("../../../db.yml", __FILE__)
 
   module ClassMethods
 
+       
     # Find a record by ID
     #
     def find(id)
@@ -43,10 +44,10 @@ class Base
 
     private
 
-    # Access to the PStore binary file
+    # Access to the yaml db
     #
-    def db
-      @db ||= PStore.new(DB_FILE)
+   def db
+      @db ||=YAML::Store.new(DB_FILE)
     end
 
     # Scoped by class, so that different model classes

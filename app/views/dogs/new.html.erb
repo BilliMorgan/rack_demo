@@ -1,12 +1,14 @@
 <html>
-  <head>
-    <title><%= @title %></title>
-  </head>
+  <%= render_partial "base/_head.html.erb" %>
   <body>
     <div>
       <h1><%= @title %></h1>
       <form action="/dogs" method="POST">
-        <!-- we'll worry about the form in the next post -->
+        <div>
+          <label for="dog_name">The dog's name</label>
+          <input type="text" name="dog[name]" id="dog_name">
+        </div>
+        <input type="submit" name="commit" value="create">
       </form>
     </div>
   </body>

@@ -1,0 +1,16 @@
+---
+Dog_1: !ruby/object:Dog
+  id: 1
+  name: Hhusky
+Dog_2: !ruby/object:Dog
+  id: 2
+  name: Doberman
+Dog_3: !ruby/object:Dog
+  id: 3
+  name: Jackrussel
+Dog_4: !ruby/object:Dog
+  id: 4
+  name: Pudel
+Dog_5: !ruby/object:Dog
+  id: 5
+  name: Ovcharka
